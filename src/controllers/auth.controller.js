@@ -37,7 +37,7 @@ export const register = async (req, res) => {
       return res.status(409).json({ message: "Username already exists" });
     }
 
-    const profileImage = `https://api.dicebear.com/7.x/avataaars/svg?seed=${username}`;
+    const profileImage = `https://api.dicebear.com/9.x/lorelei/svg?seed=${username}`;
 
     const user = new User({
       username,
