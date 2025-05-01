@@ -57,6 +57,7 @@ export const register = async (req, res) => {
         username: user.username,
         email: user.email,
         profileImage: user.profileImage,
+        createdAt: user.createdAt,
       },
     });
   } catch (err) {
@@ -92,6 +93,7 @@ export const login = async (req, res) => {
         username: user.username,
         email: user.email,
         profileImage: user.profileImage,
+        createdAt: user.createdAt,
       },
     });
   } catch (err) {
